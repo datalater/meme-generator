@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Phase 1
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Instruction
 
-## Available Scripts
+Checkout branch to `phase-1`
 
-In the project directory, you can run:
+1. Create 2 new components: `Header` and `MemeGenerator`
+2. Each component will display its own name.
+3. MemeGenerator will be calling to an API and holding on to data.
+4. Consequently, App will use two compoents.
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Phase 2
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Instruction
 
-### `yarn test`
+Checkout branch to `phase-2`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In `MemeGenerator`:
 
-### `yarn build`
+1. Initialize state to save the follwoing data:
+   1. topText
+   2. bottomText
+   3. randomImg (intialize with "http://i.imgflip.com/1bij.jpg")
+2. Make an API call to "https://api.imgflip.com/get_memes" and save the 
+data that comes back (`response.data.memes`) to a new state property
+called `allMemeImgs`. (The data that comes back is an array)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Phase 3
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Instruction
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Checkout branch to `phase-3`
 
-### `yarn eject`
+In `MemeGenerator`:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Create 2 input fields, one for the topText and one for the bottomText Remember that these will be "controlled forms", so make sure to add all the attributes you'll need for that to work.
+2. Create the onChagne handler method. It should update the corresponding state on every change of the input box.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Phase 4
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Instruction
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Checkout branch to `phase-4`
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Create a method that, when the "Gen" button is clicked, chooses one of the
+memes from our `allMemeImgs` array at random and makes it so that is the
+meme image that shows up in the bottom portion of our meme generator site. (`.url`)
