@@ -1,14 +1,27 @@
+# Getting started
+
+1. Clone this repository
+2. `yarn install`
+3. `yarn start`
+
 # Phase 1
 
 ## Instruction
 
 Checkout branch to `phase-1`
 
-1. Create 2 new components: `Header` and `MemeGenerator`
+1. Create 2 new components: rfce `Header` and rce `MemeGenerator`
 2. Each component will display its own name.
 3. MemeGenerator will be calling to an API and holding on to data.
 4. Consequently, App will use two compoents.
 
+Before move on to the next:
+
+```shell
+git reset HEAD --hard 
+git clean -n
+git clean -f
+```
 
 # Phase 2
 
@@ -26,6 +39,14 @@ In `MemeGenerator`:
 data that comes back (`response.data.memes`) to a new state property
 called `allMemeImgs`. (The data that comes back is an array)
 
+Before move on to the next:
+
+```shell
+git reset HEAD --hard 
+git clean -n
+git clean -f
+```
+
 # Phase 3
 
 ## Instruction
@@ -36,6 +57,14 @@ In `MemeGenerator`:
 
 1. Create 2 input fields, one for the topText and one for the bottomText Remember that these will be "controlled forms", so make sure to add all the attributes you'll need for that to work.
 2. Create the onChagne handler method. It should update the corresponding state on every change of the input box.
+
+Before move on to the next:
+
+```shell
+git reset HEAD --hard 
+git clean -n
+git clean -f
+```
 
 # Phase 4
 
