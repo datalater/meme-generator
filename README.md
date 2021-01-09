@@ -1,6 +1,6 @@
 # Getting started
 
-1. Clone this repository
+1. `git clone git@github.com:datalater/meme-generator.git edd-mg-$(date +%Y%m%d)`
 2. `yarn install`
 3. `yarn start`
 
@@ -56,7 +56,7 @@ Checkout branch to `phase-3`
 In `MemeGenerator`:
 
 1. Create 2 input fields, one for the topText and one for the bottomText Remember that these will be "controlled forms", so make sure to add all the attributes you'll need for that to work.
-2. Create the onChagne handler method. It should update the corresponding state on every change of the input box.
+2. Create the onChange handler method. It should update the corresponding state on every change of the input box.
 
 Before move on to the next:
 
@@ -75,3 +75,7 @@ Checkout branch to `phase-4`
 1. Create a method that, when the "Gen" button is clicked, chooses one of the
 memes from our `allMemeImgs` array at random and makes it so that is the
 meme image that shows up in the bottom portion of our meme generator site. (`.url`)
+
+# Phase end
+
+Checkout branch to `phase-end` to check out final answer.
